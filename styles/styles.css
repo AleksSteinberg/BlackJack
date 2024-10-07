@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: #0d002f;
+    height: 50px;
+    position: fixed;
+    font-size: 24px;
+}
+main {
+    padding-top: 75px;
+    padding-bottom: 25px;
+    display: grid;
+    height: 800px;
+    background-color: #150841;
+    row-gap: 50px;
+    text-align: center;
+    color: white;
+    height: 100vh;
+}
+.dealer_cards, .player_cards, .buttons {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    img {
+        border-radius: 12px;
+        -webkit-box-shadow: 0px 5px 23px 7px rgba(114, 194, 255, 0.3);
+        -moz-box-shadow: 0px 5px 23px 7px rgba(114, 194, 255, 0.3);
+        box-shadow: 0px 5px 23px 7px rgba(114, 194, 255, 0.3);
+    }
+}
+button {
+    background-color: transparent;
+    color: #fff;
+    background-color: rgba(69, 2, 150, 0.729);
+    border-radius: 10em;
+    border: rgb(255, 255, 255) 1px solid;
+    outline: none;
+    width: 125px;
+    height: 50px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 30px 1px rgba(114, 194, 255, 0.3);
+    -moz-box-shadow: 0px 0px 30px 1px rgba(114, 194, 255, 0.3);
+    box-shadow: 0px 0px 30px 1px rgba(114, 194, 255, 0.3);
+}
+button:hover {
+    -webkit-box-shadow: -2px -1px 3px 5px rgba(0, 0, 0, 0.51) inset;
+    -moz-box-shadow: -2px -1px 3px 5px rgba(0, 0, 0, 0.51) inset;
+    box-shadow: -2px -1px 3px 5px rgba(0, 0, 0, 0.51) inset;
+}
+
+button:disabled {
+    box-shadow: none;
+    background-color: black;
+    cursor: not-allowed;
+}
+input {
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 25px;
+}

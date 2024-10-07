@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <p>Your Score: <span id="playerScore">0</span></p>
+            <p>Dealer Score: <span id="dealerScore">0</span></p>
+            <p>Money: <span id="money">0</span></p>
+        </div>
+    </header>
+    <main>
+        <div class="dealer_cards">
+            <img src="images/cards/back_card.png" alt="">
+            <img src="images/cards/back_card.png" alt="">
+        </div>
+        <div>Status: <span id="status">Игра в процессе</span></div>
+        <div class="player_cards">
+            
+            <img src="images/cards/back_card.png" alt="">
+            <img src="images/cards/back_card.png" alt="">
+        </div>
+        <div class="buttons">
+            <button id="newGame">Новая игра</button>
+            <button id="newCard">Дать картку</button>
+            <button id="stop">Остановиться</button>
+            <button id="newPart">Новая партия</button>
+        </div>
+        <div id="currency">
+            <input value="10" type="text" id="bet" placeholder="Введите ставку">
+        </div>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
